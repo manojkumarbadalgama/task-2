@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+		
+		body div{
+			text-align:left;
+			vertical-align:middle;
+		}
+	</style>
+</head>
+<body>
+<div>
+<form action="/save" method="post">
+	<h2>
+		Insert Items
+	</h2>
+	<table>
+		<tr>
+			<td>
+				<label for="name">Name:</label>
+			</td>
+			<td>
+				<input type="text" id="name" name="name" required pattern="[a-zA-Z0-9]+"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="des">Description:</label>
+			</td>
+			<td>
+				<input type="text" name="des" id="des" required pattern="[a-zA-Z0-9]+"/><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="price">Price:</label> 
+			</td>
+			<td>
+				<input type="text" name="price" id="price" required pattern="[0-9]+"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="Quantity">Quantity:</label>
+			</td>
+			<td>
+				<input type="text" name="quantity"  id="quantity pattern="[0-9]+"" required/>
+
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+			</td>
+			<td>
+				<input type="submit" name="submit"/>
+			</td>
+		</tr>
+	 
+	 
+		 	
+	</table>
+</form>
+</div>
+<h2>
+	Find Items
+</h2>
+<form action='/find' method="post">
+Name <input type="text" name="name1" required/>
+<br><br>
+<input type="submit">
+</form>
+</body>
+</html>
